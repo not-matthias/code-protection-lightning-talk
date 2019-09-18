@@ -1,10 +1,14 @@
 ---
 marp: true
 title: Code Protection
-theme: uncover  
+theme: uncover
 ---
 
-# Code Protection
+# <!-- fit --> Code Protection
 by not-matthias
+
+---
+
+### There is no such thing as secure code.
 
 ---
