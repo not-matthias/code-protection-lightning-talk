@@ -1,0 +1,20 @@
+{
+  "name": "code-protection-lightning-talk",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "marp -psw ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/not-matthias/code-protection-lightning-talk.git"
+  },
+  "author": "not-matthias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/not-matthias/code-protection-lightning-talk/issues"
+  },
+  "homepage": "https://github.com/not-matthias/code-protection-lightning-talk#readme",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.14.1"
+  }
+}
