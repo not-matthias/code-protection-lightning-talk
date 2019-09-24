@@ -17,6 +17,7 @@
   - Anticheats
   - Malware
 
+
 - Performance or Security?
   
 - Don't trust the client.
@@ -40,6 +41,10 @@ Let me get this straight. There is no such thing as secure code.
 Types: Add scala for how hard it is to crack / add image
 
 
+
 Virtualization: Use picture of a matryoshka
 
+
+
+Obfuscation contest
 
