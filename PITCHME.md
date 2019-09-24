@@ -2,7 +2,7 @@
 marp: true
 title: Code Protection
 theme: uncover
-auto-scaling: true
+class: theme.css
 
 ---
 
@@ -11,7 +11,7 @@ by not-matthias
 
 ---
 
-### Nothing is uncrackable. 
+### Nothing is 100% secure. 
 
 It's just a matter of time.
 
@@ -28,25 +28,19 @@ It's just a matter of time.
 
 ## Obfuscation
 
-TODO: Show normal js and obfuscated
+> To make so confused or opaque as to be difficult to perceive or understand.
 
 ---
 
 ### Unobfuscated JavaScript
 
-<!-- @auto-scaling -->
-<!-- footer: 'Obfuscated with obfuscator.io' -->
-
 ```javascript
 console.log("Hello World!");
 ```
 
-
 --- 
 
 ### Obfuscated JavaScript
-
-<!-- footer: 'Obfuscated with obfuscator.io' -->
 
 ```javascript
 var _0x21a2 = ['log', 'Hello\x20World!'];
@@ -59,23 +53,53 @@ var _0x3255 =
 console[_0x3255('0x0')](_0x3255('0x1'));
 ```
 
+--- 
+
+### Pros
+
+- Reduced file size
+- Very confusing and hard to deal with
+- Will stop a large portion of people
+
+---
+
+### Cons
+
+- Will not prevent reversing
+- Revertable with a script
+
 ---
 
 ## Anti Debugging
 
-- Prevent the use of a debugger
+- Detecting the debugger
+- Restricting debugger usage
 
 ---
 
-### Pros and Cons
+### Example
 
-Pros: 
-- No debugger -> you have to make assumptions
 
-Cons: 
+
+
+---
+
+### Pros
+
+- Easier to make mistakes
+- You have to make assumptions.
+
+---
+
+### Cons
+
 - Only good when combined
 
+---
+
 ## Packing
+
+Encrypting the binary and 
 
 --- 
 
@@ -88,3 +112,10 @@ Cons:
 
 
 ---
+
+
+
+
+## All in all
+
+Don't trust the client.
