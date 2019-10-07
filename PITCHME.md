@@ -73,14 +73,19 @@ console[_0x3255('0x0')](_0x3255('0x1'));
 ## Anti Debugging
 
 - Detecting the debugger
-- Restricting debugger usage
+- Restricting/Limit debugger usage
 
 ---
 
 ### Example
 
-
-
+```javascript
+if(/* check if devtools opened */) {
+    while(true) {
+        debugger;
+    }
+}
+```
 
 ---
 
