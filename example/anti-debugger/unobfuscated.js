@@ -4,8 +4,8 @@
 
 const call_nested_debugger = () => {
 
-    const call_debugger = (nested_arg) => {
-        if (nested_arg > 0 || nested_arg % 20 === 0) {
+    const call_debugger = (counter) => {
+        if (counter > 0 || counter % 20 === 0) {
             // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call
             (() => true).constructor('debugger').call('action');
         } else {
@@ -13,11 +13,11 @@ const call_nested_debugger = () => {
             (() => false).constructor('debugger').apply('stateObject');
         }
 
-        call_debugger(++nested_arg);
+        call_debugger(++counter);
     }
 
     try {
-        call_debugger(0x0);
+        call_debugger(0);
     } catch (exception) {
         // do nothing
     }

@@ -18,18 +18,17 @@ It's just a matter of time.
 
 ---
 
-### Types
+### Agenda
 
 - Obfuscation
 - Anti Debugging
 - Packing 
-- Virtualization
 
 ---
 
 ## Obfuscation
 
-> To make so confused or opaque as to be difficult to perceive or understand.
+> To make something so confused or opaque as to be difficult to perceive or understand.
 
 ---
 
@@ -68,8 +67,8 @@ console[_0x3255('0x0')](_0x3255('0x1'));
 
 - Performance
 - Will not prevent reversing
-- Only useful for script languages
-- Revertable with a tool (https://lelinhtinh.github.io/de4js/)
+- Only useful for script languages TODO
+- Revertable with a script
 
 ---
 
@@ -92,15 +91,14 @@ while(true) {
 
 ### Pros
 
-
-- More effort to remove it
+- It takes time to remove it
 - It's hard to reverse without a debugger
 
 ---
 
 ### Cons
 
-- Bad Performance
+- Performance
 - Only good when combined
 
 ---
@@ -115,18 +113,46 @@ Encrypting the binary
 
 ![width:700px height:auto](images/packer_concept.png)
 
---- 
+---
 
 ### Pros
 
-- 
+- Hard to extract the real binary
+- Hard to remove 
 
 ---
 
 ### Cons
 
+- Performance
+- Increased file size
 
+---
 
+### Other Types
+
+- Terms of service
+- Virtualization
+- Permutation
+- ...
+
+---
+
+## When to use what?
+
+It always depends on these factors:
+- Money
+- File Size
+- Performance
+- Programming Language
+- ...
+
+---
+
+### Thanks for your attention.
+
+---
+---
 ---
 
 ## Virtualization
@@ -147,15 +173,3 @@ Emulating the code in a virtual processor.
 - Complicated to implement
 
 ---
-
-### Other Types
-
-- Mutations
-- 
-- ...
-
----
-
-## Summary
-
-Don't trust the client.
