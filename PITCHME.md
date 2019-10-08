@@ -3,6 +3,7 @@ marp: true
 title: Code Protection
 theme: uncover
 class: theme.css
+inlineSVG: true
 
 ---
 
@@ -57,7 +58,7 @@ console[_0x3255('0x0')](_0x3255('0x1'));
 
 ### Pros
 
-- Reduced file size
+- Reduced file size (when minified)
 - Very confusing and hard to deal with
 - Will stop a large portion of people
 
@@ -65,25 +66,25 @@ console[_0x3255('0x0')](_0x3255('0x1'));
 
 ### Cons
 
+- Performance
 - Will not prevent reversing
-- Revertable with a script
+- Only useful for script languages
+- Revertable with a tool (https://lelinhtinh.github.io/de4js/)
 
 ---
 
 ## Anti Debugging
 
 - Detecting the debugger
-- Restricting/Limit debugger usage
+- Restricting/Limiting debugger usage
 
 ---
 
 ### Example
 
 ```javascript
-if(/* check if devtools opened */) {
-    while(true) {
-        debugger;
-    }
+while(true) {
+    debugger;
 }
 ```
 
@@ -91,36 +92,70 @@ if(/* check if devtools opened */) {
 
 ### Pros
 
-- Easier to make mistakes
-- You have to make assumptions.
+
+- More effort to remove it
+- It's hard to reverse without a debugger
 
 ---
 
 ### Cons
 
+- Bad Performance
 - Only good when combined
 
 ---
 
 ## Packing
 
-Encrypting the binary and 
+Encrypting the binary
 
 --- 
 
-### Encrypted Binary
+### Concept
+
+![width:700px height:auto](images/packer_concept.png)
+
+--- 
+
+### Pros
+
+- 
+
+---
+
+### Cons
+
 
 
 ---
 
 ## Virtualization
 
+Emulating the code in a virtual processor.
 
 ---
 
+### Pros
 
+- Very hard to reverse
 
+---
 
-## All in all
+### Cons
+
+- Performance
+- Complicated to implement
+
+---
+
+### Other Types
+
+- Mutations
+- 
+- ...
+
+---
+
+## Summary
 
 Don't trust the client.
