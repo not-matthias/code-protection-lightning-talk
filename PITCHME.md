@@ -67,7 +67,7 @@ console[_0x3255('0x0')](_0x3255('0x1'));
 
 - Performance
 - Will not prevent reversing
-- Only useful for script languages TODO
+- Only useful for script languages
 - Revertable with a script
 
 ---
