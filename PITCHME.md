@@ -118,14 +118,15 @@ Encrypting the binary
 ### Pros
 
 - Hard to extract the real binary
-- Hard to remove 
+- Hard to remove
+- Decreased file size
 
 ---
 
 ### Cons
 
 - Performance
-- Increased file size
+- Difficult to implement
 
 ---
 
