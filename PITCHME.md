@@ -152,25 +152,3 @@ It always depends on these factors:
 
 ### Thanks for your attention.
 
----
----
----
-
-## Virtualization
-
-Emulating the code in a virtual processor.
-
----
-
-### Pros
-
-- Very hard to reverse
-
----
-
-### Cons
-
-- Performance
-- Complicated to implement
-
----
