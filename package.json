@@ -15,6 +15,6 @@
   },
   "homepage": "https://github.com/not-matthias/code-protection-lightning-talk#readme",
   "devDependencies": {
-    "@marp-team/marp-cli": "^0.14.1"
+    "@marp-team/marp-cli": "^2.3.0"
   }
 }
